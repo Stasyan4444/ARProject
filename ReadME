@@ -1,1 +1,2 @@
 Крутой проект, вообще да
+Перед началом использования прописать в терминале "docker-compose -f docker-compose.yaml up --build"
