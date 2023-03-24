@@ -1,2 +1,5 @@
 Крутой проект, вообще да
-Перед началом использования прописать в терминале "docker-compose -f docker-compose.yaml up --build"
+Перед началом использования:
+1. Установить WSL и Ubuntu (https://learn.microsoft.com/ru-ru/windows/wsl/install / https://www.youtube.com/watch?v=NlObaul_XT4)
+2. Утсановить docker и docker-compose (https://docs.docker.com/desktop/install/windows-install/)
+3. прописать в терминале "docker-compose -f docker-compose.yaml up --build"
