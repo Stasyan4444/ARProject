@@ -7,8 +7,6 @@ import com.example.auth.service.RegisterService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
-
 @RestController
 @RequestMapping("/")
 @RequiredArgsConstructor
@@ -22,12 +20,12 @@ public class AuthController {
         return registerService.userRegistration(registerDto);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/signin")
     public String authentication(@RequestBody AuthDto authDto) {
         return authService.userAuthentication(authDto);
     }
 
-    @GetMapping(value = "/{id}", produces = "application/json")
+    @GetMapping(value = "/getUser/{id}", produces = "application/json")
     public RegisterDto getUser(@PathVariable("id") Integer id) {
         return registerService.findUserById(id);
     }
