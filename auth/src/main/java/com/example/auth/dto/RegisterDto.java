@@ -1,16 +1,10 @@
 package com.example.auth.dto;
 
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
-import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "register")
 public class RegisterDto {
@@ -18,8 +12,8 @@ public class RegisterDto {
     @Column(name = "_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "_login")
     private String login;
-
     @Column(name = "_password")
     private String password;
 }
